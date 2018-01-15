@@ -20,7 +20,6 @@ class ResPartner(models.Model):
                 domain = [
                     ('id', '!=', partner.id),
                     ('ref', '=', partner.ref),
-                    ('customer', '=', True),
                 ]
                 if mode == 'companies':
                     domain.append(('is_company', '=', True))
